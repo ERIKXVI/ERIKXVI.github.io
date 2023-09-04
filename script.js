@@ -38,3 +38,14 @@ function draw() {
 }
 
 draw();
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    VanillaTilt.init(document.querySelectorAll(".main, .about"), {
+        max: 35,
+        speed: 400,
+        perspective: 500,
+        scale: 1.05,
+        glare: true,
+        "max-glare": 0
+    });
+});
