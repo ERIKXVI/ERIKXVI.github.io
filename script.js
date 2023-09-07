@@ -41,7 +41,7 @@ draw();
 
 document.addEventListener('DOMContentLoaded', (event) => {
     VanillaTilt.init(document.querySelectorAll(".main, .about"), {
-        max: 35,
+        max: 0,
         speed: 400,
         perspective: 500,
         scale: 1.05,
