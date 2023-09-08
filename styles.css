@@ -57,7 +57,7 @@ body {
     margin: 0 auto; /* Centers the image horizontally */
 }
 
-#name, #discord, #about {
+#name, #discord, #Languages {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -65,7 +65,7 @@ body {
     font-size: 25px;
 }
 
-#discord, #about {
+#discord, #Languages {
     font-size: 15px;
 }
 
