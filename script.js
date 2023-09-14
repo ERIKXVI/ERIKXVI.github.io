@@ -31,7 +31,7 @@ function draw() {
             matrix[i] = 0;
         }
 
-        matrix[i] += fontSize;
+        matrix[i] += fontSize / 2;
     }
 
     requestAnimationFrame(draw);
@@ -40,7 +40,7 @@ function draw() {
 draw();
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    VanillaTilt.init(document.querySelectorAll(".main, .about"), {
+    VanillaTilt.init(document.querySelectorAll(".main, .about, .Languages"), {
         max: 0,
         speed: 400,
         perspective: 500,
@@ -49,3 +49,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         "max-glare": 0
     });
 });
+
+window.addEventListener('resize', () => {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+});
+
